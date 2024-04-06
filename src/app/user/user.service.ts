@@ -4,11 +4,14 @@ import { UpdateUserDto } from './dto/update-user.dto';
 
 @Injectable()
 export class UserService {
-  create(createUserDto: CreateUserDto) {
+  async findByEmail(email: string) {
+    // use the findOne method and get the users email
+    // return it
     return 'This action adds a new user';
   }
 
-  findAll() {
+  async createAccount(createAccount: CreateUserDto) {
+    // create account with user data and return user object
     return `This action returns all user`;
   }
 
@@ -20,7 +23,7 @@ export class UserService {
     return `This action updates a #${id} user`;
   }
 
-  remove(id: number) {
+  signup(id: number) {
     return `This action removes a #${id} user`;
   }
 }

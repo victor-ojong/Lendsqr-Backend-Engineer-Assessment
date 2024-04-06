@@ -1,26 +1,50 @@
-import { Injectable } from '@nestjs/common';
-import { CreateAuthenticationDto } from './dto/create-authentication.dto';
-import { UpdateAuthenticationDto } from './dto/update-authentication.dto';
+import { promisify } from 'util';
+import { randomBytes, scrypt as _scrypt } from 'crypto';
+
+import { HttpException, Injectable } from '@nestjs/common';
+import { UserService } from '../user/user.service';
+import { CreateUserDto } from '../user/dto/create-user.dto';
+import { UserLogin } from '../user/dto/user-login.dto';
+export const scrypt = promisify(_scrypt);
 
 @Injectable()
-export class AuthenticationService {
-  create(createAuthenticationDto: CreateAuthenticationDto) {
-    return 'This action adds a new authentication';
+export class AuthService {
+  constructor(private userService: UserService) {}
+
+  async createAccount(createAccountDto: CreateUserDto) {
+    const userExist = await this.userService.findByEmail(
+      createAccountDto.email,
+    );
+
+    if (userExist) {
+      throw new HttpException('Email already in use', 403);
+    }
+    const salt = randomBytes(8).toString('hex');
+
+    const hash = (await scrypt(createAccountDto.password, salt, 32)) as Buffer;
+
+    createAccountDto.password = salt + '.' + hash.toString('hex');
+
+    return await this.userService.createAccount(createAccountDto);
   }
 
-  findAll() {
-    return `This action returns all authentication`;
-  }
+  async login(loginDto: UserLogin) {
+    const user = await this.userService.findByEmail(loginDto.email);
 
-  findOne(id: number) {
-    return `This action returns a #${id} authentication`;
-  }
+    if (!user) {
+      throw new HttpException('Invalid login credentials', 403);
+    }
 
-  update(id: number, updateAuthenticationDto: UpdateAuthenticationDto) {
-    return `This action updates a #${id} authentication`;
-  }
+    const [salt, hashedDB] = user.password.split('.');
 
-  remove(id: number) {
-    return `This action removes a #${id} authentication`;
+    const newHash = (await scrypt(loginDto.password, salt, 32)) as Buffer;
+
+    const isValid = hashedDB === newHash.toString('hex');
+
+    if (!isValid) {
+      throw new HttpException('Invalid login credentials', 403);
+    }
+
+    return user;
   }
 }
