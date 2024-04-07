@@ -11,24 +11,26 @@ export class UserService {
   constructor(@InjectConnection() private readonly knex: Knex) {}
 
   async createAccount(createAccount: CreateUserDto) {
-    const timestamp = Date.now();
-    const user = await this.knex.table('users').insert({
-      firstName: createAccount.firstName,
-      lastName: createAccount.lastName,
-      password: createAccount.password,
-      bvn: createAccount.bvn,
-      accountNumber: createAccount.phone,
-      phone: createAccount.phone,
-      userLevel: 0,
-      createdAt: timestamp,
-      updatedAt: timestamp,
-      balance: 0.0,
-    });
-    return user;
+    try {
+      const user = await this.knex.table<User>('user').insert({
+        firstName: createAccount.firstName,
+        lastName: createAccount.lastName,
+        password: createAccount.password,
+        email: createAccount.email,
+        bvn: createAccount.bvn,
+        accountNumber: createAccount.phone,
+        phone: createAccount.phone,
+      });
+
+      createAccount.password = undefined;
+      return { id: user[0], ...createAccount };
+    } catch (err) {
+      console.log(`ERROR MESSAGE: ${err}`);
+    }
   }
 
   async findByEmail(email: string): Promise<User[]> {
-    const user = await this.knex<User>('users').where('email', email);
+    const user = await this.knex<User>('user').where('email', email);
     return user;
   }
 

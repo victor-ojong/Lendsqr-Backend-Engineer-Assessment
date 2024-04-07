@@ -6,7 +6,7 @@ module.exports = {
     connection: {
       database: 'lender_App',
       user: 'root',
-      password: 'root',
+      password: '',
       host: 'localhost',
       port: 3306,
       ssl: false,
