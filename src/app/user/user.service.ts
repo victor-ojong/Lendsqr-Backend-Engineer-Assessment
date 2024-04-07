@@ -1,29 +1,39 @@
 import { Injectable } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
+
+import { Knex } from 'knex';
+import { InjectConnection } from 'nest-knexjs';
+
+import { User } from './entities/user.entity';
 
 @Injectable()
 export class UserService {
-  async findByEmail(email: string) {
-    // use the findOne method and get the users email
-    // return it
-    return 'This action adds a new user';
-  }
+  constructor(@InjectConnection() private readonly knex: Knex) {}
 
   async createAccount(createAccount: CreateUserDto) {
-    // create account with user data and return user object
-    return `This action returns all user`;
+    const timestamp = Date.now();
+    const user = await this.knex.table('users').insert({
+      firstName: createAccount.firstName,
+      lastName: createAccount.lastName,
+      password: createAccount.password,
+      bvn: createAccount.bvn,
+      accountNumber: createAccount.phone,
+      phone: createAccount.phone,
+      userLevel: 0,
+      createdAt: timestamp,
+      updatedAt: timestamp,
+      balance: 0.0,
+    });
+    return user;
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} user`;
+  async findByEmail(email: string): Promise<User[]> {
+    const user = await this.knex<User>('users').where('email', email);
+    return user;
   }
 
-  update(id: number, updateUserDto: UpdateUserDto) {
-    return `This action updates a #${id} user`;
-  }
-
-  signup(id: number) {
-    return `This action removes a #${id} user`;
+  async findOne(id: number): Promise<User[]> {
+    const user = await this.knex.table<User>('user').where('id', id);
+    return user;
   }
 }

@@ -10,9 +10,9 @@ import {
 } from '@nestjs/common';
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
-import { AuthService } from '../authentication/authentication.service';
+
 import { UserLogin } from './dto/user-login.dto';
+import { AuthService } from './authentication.service';
 // import { request as ExpressRequest } from 'express';
 
 @Controller('user')
@@ -25,13 +25,13 @@ export class UserController {
   // user based action
   @Post()
   createAccount(@Body() createUserDto: CreateUserDto) {
-    return this.userService.create(createUserDto);
+    return this.authService.createAccount(createUserDto);
   }
 
   // transaction based action
   @Patch()
   recieveFunds() {
-    return this.userService.findAll();
+    // return this.userService.findAll();
   }
 
   // transaction based action
@@ -42,8 +42,8 @@ export class UserController {
 
   // transaction based action
   @Post('/loan-request')
-  requestLoad(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    return this.userService.update(+id, updateUserDto);
+  requestLoad(@Param('id') id: string) {
+    // return this.userService.update(+id, updateUserDto);
   }
 
   // user based action
@@ -55,7 +55,7 @@ export class UserController {
 
   @Post('/login')
   async login(@Body() body: UserLogin, @Session() session: any) {
-    const user = await this.authService.login(body.email, body.password);
+    const user = await this.authService.login(body);
     session.userId = user.id;
     return user;
   }
