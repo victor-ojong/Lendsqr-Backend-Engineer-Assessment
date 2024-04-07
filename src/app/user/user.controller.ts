@@ -23,9 +23,16 @@ export class UserController {
   ) {}
 
   // user based action
-  @Post()
+  @Post('/create')
   createAccount(@Body() createUserDto: CreateUserDto) {
     return this.authService.createAccount(createUserDto);
+  }
+
+  @Post('/login')
+  async login(@Body() body: UserLogin, @Session() session: any) {
+    const user = await this.authService.login(body);
+    session.userId = user.id;
+    return user;
   }
 
   // transaction based action
@@ -50,14 +57,7 @@ export class UserController {
   @Patch('/close-account')
   closeAccount(@Req() req: any) {
     //
-    return;
-  }
-
-  @Post('/login')
-  async login(@Body() body: UserLogin, @Session() session: any) {
-    const user = await this.authService.login(body);
-    session.userId = user.id;
-    return user;
+    return 'why';
   }
 
   @Get('/logout')

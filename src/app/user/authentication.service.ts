@@ -16,7 +16,7 @@ export class AuthService {
       createAccountDto.email,
     );
 
-    if (userExist || userExist.length === 1) {
+    if (userExist.length > 0) {
       throw new HttpException('Email already in use', 403);
     }
     const salt = randomBytes(8).toString('hex');
@@ -31,22 +31,23 @@ export class AuthService {
   async login(loginDto: UserLogin) {
     const user = await this.userService.findByEmail(loginDto.email);
 
-    if (!user || user.length === 0) {
+    const currentUser = user.at(0);
+
+    if (!currentUser) {
       throw new HttpException('Invalid login credentials', 403);
     }
 
-    const firstUser = user[0];
-
-    const [salt, hashedDB] = firstUser.password.split('.');
+    const [salt, hashedDB] = currentUser.password.split('.');
 
     const newHash = (await scrypt(loginDto.password, salt, 32)) as Buffer;
 
-    const isValid = hashedDB === newHash.toString('hex');
+    const isValid =
+      hashedDB === newHash.toString('hex').slice(0, hashedDB.length);
 
     if (!isValid) {
       throw new HttpException('Invalid login credentials', 403);
     }
-
-    return firstUser;
+    currentUser.password = undefined;
+    return currentUser;
   }
 }
