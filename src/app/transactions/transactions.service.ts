@@ -10,7 +10,7 @@ export class TransactionsService {
 
   async sendFunds(sendFundsDto: SendFundsDto, user: Partial<User>) {
     user = user[0];
-    console.log(user);
+
     if (!this.validateBalance(sendFundsDto.amount, user.balance)) {
       return {
         status: 'fail',
@@ -113,10 +113,14 @@ export class TransactionsService {
         .table('transactions')
         .where({ user_id: id });
 
-      console.log(statement);
       return statement;
     } catch (err) {
       console.log('error');
     }
+  }
+
+  async getBalance(id: number) {
+    const user = await this.knex.table('user').where({ id: id });
+    return `NGN ${user[0].balance}.00`;
   }
 }

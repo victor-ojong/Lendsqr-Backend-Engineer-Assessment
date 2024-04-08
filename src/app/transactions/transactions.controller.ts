@@ -29,4 +29,9 @@ export class TransactionsController {
   async getReport(@Req() req: any) {
     return await this.transactionsService.accountStatement(req.user[0].id);
   }
+
+  @Get('/balance')
+  async getBalance(@Req() req: any) {
+    return await this.transactionsService.getBalance(req.user[0].id);
+  }
 }
