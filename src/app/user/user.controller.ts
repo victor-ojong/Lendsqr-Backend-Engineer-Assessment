@@ -1,6 +1,4 @@
 import { Controller, Get, Post, Body, Session } from '@nestjs/common';
-import { CreateUserDto } from './dto/create-user.dto';
-
 import { UserLogin } from './dto/user-login.dto';
 import { AuthService } from './authentication.service';
 // import { Request as ExpressRequest } from 'express';
@@ -8,11 +6,6 @@ import { AuthService } from './authentication.service';
 @Controller('user')
 export class UserController {
   constructor(private readonly authService: AuthService) {}
-
-  @Post('/create')
-  createAccount(@Body() createUserDto: CreateUserDto) {
-    return this.authService.createAccount(createUserDto);
-  }
 
   @Post('/login')
   async login(@Body() body: UserLogin, @Session() session: any) {

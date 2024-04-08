@@ -67,7 +67,7 @@ export class AdjutorService {
         }
 
         if (data?.data?.watchlisted === 0) {
-          return this.authService.createAccount({
+          const newUser = await this.authService.createAccount({
             firstName: data.data.first_name,
             lastName: data.data.last_name,
             email: data.data.email,
@@ -75,6 +75,12 @@ export class AdjutorService {
             password: verifyTokenDto.password,
             bvn: data.data.bvn,
           });
+
+          return {
+            staus: 'success',
+            message: 'Congratulations you have been onboarded sucessfully',
+            ...newUser,
+          };
         }
       }
 

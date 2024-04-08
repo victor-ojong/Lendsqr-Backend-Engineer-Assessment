@@ -6,7 +6,6 @@ import {
   Get,
   UseGuards,
   UseInterceptors,
-  Param,
 } from '@nestjs/common';
 import { TransactionsService } from './transactions.service';
 import { SendFundsDto } from './dto/send-funds.dto';
