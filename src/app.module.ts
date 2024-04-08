@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { UserModule } from './app/user/user.module';
 import { KnexModule } from 'nest-knexjs';
 import { TransactionsModule } from './app/transactions/transactions.module';
+import { AdjutorModule } from './app/adjutor/adjutor.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { TransactionsModule } from './app/transactions/transactions.module';
 
     UserModule,
     TransactionsModule,
+    AdjutorModule,
   ],
   controllers: [AppController],
   providers: [AppService],

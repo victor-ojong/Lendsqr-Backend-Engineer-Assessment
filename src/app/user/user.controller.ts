@@ -1,9 +1,9 @@
-import { Controller, Get, Post, Body, Session } from '@nestjs/common';
+import { Controller, Get, Post, Body, Session, Req } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 
 import { UserLogin } from './dto/user-login.dto';
 import { AuthService } from './authentication.service';
-// import { request as ExpressRequest } from 'express';
+// import { Request as ExpressRequest } from 'express';
 
 @Controller('user')
 export class UserController {
@@ -19,6 +19,11 @@ export class UserController {
     const user = await this.authService.login(body);
     session.userId = user.id;
     return user;
+  }
+  // protected route
+  @Post('/verify-bvn')
+  verifyBvn(@Req() req: any) {
+    //sk_live_S3WPw39YfccMoIW3qgUkMMmmmgJK6v0dWPCp6eM4
   }
 
   @Get('/logout')
