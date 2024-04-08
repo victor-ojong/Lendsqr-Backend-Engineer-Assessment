@@ -1,13 +1,4 @@
-import {
-  Controller,
-  Get,
-  Post,
-  Body,
-  Patch,
-  Param,
-  Session,
-  Req,
-} from '@nestjs/common';
+import { Controller, Get, Post, Body, Session } from '@nestjs/common';
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 
@@ -22,7 +13,6 @@ export class UserController {
     private readonly authService: AuthService,
   ) {}
 
-  // user based action
   @Post('/create')
   createAccount(@Body() createUserDto: CreateUserDto) {
     return this.authService.createAccount(createUserDto);
@@ -35,41 +25,9 @@ export class UserController {
     return user;
   }
 
-  // transaction based action
-  @Patch()
-  recieveFunds() {
-    // return this.userService.findAll();
-  }
-
-  // transaction based action
-  @Patch('/send-funds')
-  sendFunds(@Param('id') id: string) {
-    return this.userService.findOne(+id);
-  }
-
-  // transaction based action
-  @Post('/loan-request')
-  requestLoad(@Param('id') id: string) {
-    // return this.userService.update(+id, updateUserDto);
-  }
-
-  // user based action
-  @Patch('/close-account')
-  closeAccount(@Req() req: any) {
-    //
-    return 'why';
-  }
-
   @Get('/logout')
   logOut(@Session() session: any) {
     session.userId = null;
     return { status: 'success', message: 'You are logged out' };
-  }
-
-  // user based action
-  @Get('/check')
-  checkEligibility() {
-    // use the  lendr api to check if user is blacklisted or not
-    // this should be in the authentication service
   }
 }

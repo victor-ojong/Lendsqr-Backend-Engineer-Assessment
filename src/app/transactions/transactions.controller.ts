@@ -1,7 +1,18 @@
-import { Controller, Post, Body, Req } from '@nestjs/common';
+import {
+  Controller,
+  Post,
+  Body,
+  Req,
+  UseGuards,
+  UseInterceptors,
+} from '@nestjs/common';
 import { TransactionsService } from './transactions.service';
 import { SendFundsDto } from './dto/send-funds.dto';
+import { AuthGuard } from '../Guard/auth.guard';
+import { CurrentUser } from '../interceptors/users.interceptor';
 
+@UseGuards(AuthGuard)
+@UseInterceptors(CurrentUser)
 @Controller('transactions')
 export class TransactionsController {
   constructor(private readonly transactionsService: TransactionsService) {}
