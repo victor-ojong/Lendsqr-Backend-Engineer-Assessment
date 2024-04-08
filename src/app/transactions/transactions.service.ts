@@ -9,6 +9,8 @@ export class TransactionsService {
   constructor(@InjectConnection() private readonly knex: Knex) {}
 
   async sendFunds(sendFundsDto: SendFundsDto, user: Partial<User>) {
+    user = user[0];
+    console.log(user);
     if (!this.validateBalance(sendFundsDto.amount, user.balance)) {
       return {
         status: 'fail',
@@ -60,7 +62,7 @@ export class TransactionsService {
 
     return {
       status: 'success',
-      message: `Congratulations ${user.firstName} you have just transfered ${sendFundsDto.currency} ${sendFundsDto.amount} to ${sendFundsDto.to_account}`,
+      message: `${user.firstName} you have just transfered ${sendFundsDto.currency} ${sendFundsDto.amount} to ${sendFundsDto.to_account}`,
     };
   }
 
@@ -73,7 +75,7 @@ export class TransactionsService {
   }
 
   private deductAmount(balance: number, sentAmount: number) {
-    return balance - sentAmount;
+    return Math.abs(balance - sentAmount);
   }
 
   private async updateUsersBalance(id: number, balance: number) {
@@ -103,5 +105,18 @@ export class TransactionsService {
     return senderIsSaved.length > 0 && reciepeintIsSaved.length > 0
       ? true
       : false;
+  }
+
+  async accountStatement(id: number) {
+    try {
+      const statement = await this.knex
+        .table('transactions')
+        .where({ user_id: id });
+
+      console.log(statement);
+      return statement;
+    } catch (err) {
+      console.log('error');
+    }
   }
 }

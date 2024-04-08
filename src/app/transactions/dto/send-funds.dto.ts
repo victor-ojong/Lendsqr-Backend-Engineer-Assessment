@@ -7,8 +7,8 @@ export class SendFundsDto {
   @IsString()
   description: string;
 
-  @IsNumber()
-  to_account: number;
+  @IsString()
+  to_account: string;
 
   @IsString()
   currency: string;

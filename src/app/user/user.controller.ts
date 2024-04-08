@@ -1,5 +1,4 @@
 import { Controller, Get, Post, Body, Session } from '@nestjs/common';
-import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 
 import { UserLogin } from './dto/user-login.dto';
@@ -8,10 +7,7 @@ import { AuthService } from './authentication.service';
 
 @Controller('user')
 export class UserController {
-  constructor(
-    private readonly userService: UserService,
-    private readonly authService: AuthService,
-  ) {}
+  constructor(private readonly authService: AuthService) {}
 
   @Post('/create')
   createAccount(@Body() createUserDto: CreateUserDto) {
