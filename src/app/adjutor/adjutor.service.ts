@@ -58,23 +58,26 @@ export class AdjutorService {
       const data = await response.json();
 
       if (data.status) {
-        if (data.watchlisted) {
+        if (data?.data?.watchlisted > 0) {
           return {
-            status: 'Access denied',
+            status: 'Access denied!',
             message:
               'Your bvn has been blacklisted and will not be able to have an account on our platform, bey! ',
           };
-        } else {
+        }
+
+        if (data?.data?.watchlisted === 0) {
           return this.authService.createAccount({
-            firstName: data.first_name,
-            lastName: data.last_name,
-            email: data.email,
-            phone: data.mobile,
+            firstName: data.data.first_name,
+            lastName: data.data.last_name,
+            email: data.data.email,
+            phone: data.data.mobile,
             password: verifyTokenDto.password,
-            bvn: data.bvn,
+            bvn: data.data.bvn,
           });
         }
       }
+
       return data;
     } catch (error) {
       throw error;

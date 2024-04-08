@@ -29,8 +29,10 @@ export class UserService {
     }
   }
 
-  async findByPhone(phone: string): Promise<User[]> {
-    const user = await this.knex<User>('user').where('phone', phone);
+  async findBybvn(bvn: string): Promise<User[]> {
+    console.log(bvn);
+    const user = await this.knex.table<User>('user').where('bvn', bvn);
+    console.log('💖✅💘');
     return user;
   }
 

@@ -12,9 +12,7 @@ export class AuthService {
   constructor(private userService: UserService) {}
 
   async createAccount(createAccountDto: CreateUserDto) {
-    const userExist = await this.userService.findByPhone(
-      createAccountDto.phone,
-    );
+    const userExist = await this.userService.findBybvn(createAccountDto.bvn);
 
     if (userExist.length > 0) {
       throw new HttpException('Email already in use', 403);
@@ -29,7 +27,7 @@ export class AuthService {
   }
 
   async login(loginDto: UserLogin) {
-    const user = await this.userService.findByPhone(loginDto.phone);
+    const user = await this.userService.findBybvn(loginDto.phone);
 
     const currentUser = user.at(0);
 
