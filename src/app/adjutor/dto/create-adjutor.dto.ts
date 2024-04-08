@@ -1,8 +1,8 @@
-import { IsNumber, IsString } from 'class-validator';
+import { IsString } from 'class-validator';
 
 export class CreateAdjutorDto {
-  @IsNumber()
-  bvn: number;
+  @IsString()
+  bvn: string;
 
   @IsString()
   phone: string;

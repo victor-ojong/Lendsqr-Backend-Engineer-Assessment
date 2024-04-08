@@ -2,7 +2,8 @@ import { IsEmail, IsNumber, IsOptional, IsString } from 'class-validator';
 
 export class CreateUserDto {
   @IsEmail()
-  email: string;
+  @IsOptional()
+  email: string | null;
 
   @IsString()
   firstName: string;
@@ -11,7 +12,7 @@ export class CreateUserDto {
   lastName: string;
 
   @IsNumber()
-  bvn: number;
+  bvn: string;
 
   @IsString()
   password: string;

@@ -12,8 +12,8 @@ export class AuthService {
   constructor(private userService: UserService) {}
 
   async createAccount(createAccountDto: CreateUserDto) {
-    const userExist = await this.userService.findByEmail(
-      createAccountDto.email,
+    const userExist = await this.userService.findByPhone(
+      createAccountDto.phone,
     );
 
     if (userExist.length > 0) {
@@ -29,7 +29,7 @@ export class AuthService {
   }
 
   async login(loginDto: UserLogin) {
-    const user = await this.userService.findByEmail(loginDto.email);
+    const user = await this.userService.findByPhone(loginDto.phone);
 
     const currentUser = user.at(0);
 
