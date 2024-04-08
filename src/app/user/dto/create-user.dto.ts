@@ -30,4 +30,8 @@ export class CreateUserDto {
   @IsNumber()
   @IsOptional()
   userLevel?: 1 | 0;
+
+  @IsNumber()
+  @IsOptional()
+  id?: number;
 }
