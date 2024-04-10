@@ -159,16 +159,20 @@ Below is a guide to for installing and running this project locally and in produ
 ## Roadmap
 
 - [x] Initialize bvn and recieve OTP token
-- [x] Send the OTP token with new account password for demo credit
-- [x] if user not blacklisted in karma service
+- [x] Send the OTP token with new demo credit account password 
+- [x] If user not blacklisted in karma service
     - [x] Account is created
     - [x] User is onboared
-- [-] if user blacklisted in karma service
+- [ ] If User blacklisted in karma service
     - [ ] Access denied!
-- [ ] User Logs in
-    - [ ] Can transfer funds 
-    - [ ] Can request for loan
-    - [ ] Can recieve funds
+- [x] User Logs in
+    - [x] Can transfer funds 
+    - [x] Can recieve funds
+    - [x] can request loan
+
+- [x] If User is Admin
+    - [x] can approve loan
+    - [x] can get all Users on the platform 
 
 
 
