@@ -94,10 +94,10 @@ The following tools were used for the development of this project;
 * MySQL database
 * KnexJS ORM
 * NestJs
-* Render - Deployment 
+* Deployment - Render
 * CI/CD workflow 
-* Jest - unit testing
-* Athentication - bcrypt and sessions
+* Unit - Jest
+* Athentication - bcrypt
 
 
 
