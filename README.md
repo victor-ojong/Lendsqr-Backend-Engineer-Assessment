@@ -194,7 +194,7 @@ Online - [@linkedIn](https://www.linkedin.com/in/victorojong) - victorojong500@g
 
 Project Link: [https://victor-ojong-lendsqr-be-test.onrender.com](https://victor-ojong-lendsqr-be-test.onrender.com/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
