@@ -75,7 +75,7 @@ Features:
     <img src="/assets/e-r diagram.png" alt="Logo" width="80%">
   </a>
 </div>
-The Entity Relationship (E-R Diagram) above shows that the different entities of this software includes our Users, Transaction records, Adjutor bvn service and the Admin. The bvn validator and adjutor service makes it possible to detect blacklisted bvn owners and prevent them from accessing our services thereby reducing the risk of non-complaint debtors. The User id is an essential token that is created upon onboarding into the application and is included every single transaction record. 
+The Entity Relationship (E-R Diagram) above shows that the different entities of this software includes our Users, Transaction records, Adjutor bvn service and the Admin. The bvn validator and adjutor service makes it possible to detect blacklisted bvn owners and prevent them from accessing our services thereby reducing the risk of non-complaint debtors. The User id is an essential token that is created upon onboarding into the application and is included with every single transaction record on the application incuding the sender and reciever account details, transaction amount and current timestamp. This Services put together implements common wallet / banking processes in the real-world. 
 <br>
 
 
