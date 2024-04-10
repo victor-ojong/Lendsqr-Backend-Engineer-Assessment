@@ -86,25 +86,19 @@ The Entity Relationship (E-R Diagram) above shows that the different entities of
 
 ### Tech Stack 
 
-The following tools were used for the development of this project; 
+These tools are preferred because they offer
 
 
-* Node.Js (LTS version)
-* Typescript
-* MySQL database
-* KnexJS ORM
-* NestJs
-* Deployment - Render
-* CI/CD workflow 
-* Unit - Jest
-* Athentication - bcrypt
-
-
-
-NodeJS (LTS version)
-KnexJS ORM
-MySQL database
-TypeScript
+* Node.js (LTS version): A robust, scalable runtime environment for building server-side applications using JavaScript.
+* Typescript: Provides static typing, enhancing code maintainability, readability, and catching errors during development.
+* MySQL database: A widely-used, open-source relational database management system, offering reliability, scalability, and performance for storing and managing data.
+* KnexJS ORM: An SQL query builder for Node.js, facilitating database interactions, migrations, and seeding with ease, promoting productivity and maintainability.
+* Restful API Design: A standard approach for designing APIs, ensuring interoperability, scalability, and simplicity in communication between systems.
+* NestJs: A progressive Node.js framework for building efficient, reliable, and scalable server-side applications, offering modularity, dependency injection, and robustness.
+* Deployment - Render: A cloud platform for deploying and scaling web applications easily, offering simplicity, scalability, and reliability in hosting infrastructure.
+* CI/CD workflow: Continuous Integration (CI) and Continuous Deployment (CD) automate the software delivery process, ensuring rapid, reliable, and consistent deployment of applications.
+* Unit test - Jest: A JavaScript testing framework with a focus on simplicity, ensuring code quality, reliability, and maintainability through automated testing.
+* Authentication - bcrypt: A widely-used library for hashing passwords securely, enhancing security and protecting user credentials from unauthorized access.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,7 +120,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+Below is a guide to for installing and running this project locally and in production_
 
 
 1. Clone the repo
@@ -180,14 +174,6 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 
 
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
