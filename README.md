@@ -35,7 +35,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
       </ul>
     </li>
     <li>
@@ -47,7 +47,6 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -76,9 +75,9 @@ Features:
     <img src="/assets/E - R DIAGRAM.png" alt="Logo" width="80%">
   </a>
 </div>
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+The Entity Relationship (E-R Diagram) above shows that the different entities of this software includes our Users, Transaction records, Adjutor bvn service and the Admin. The bvn validator and adjutor service makes it possible to detect blacklisted bvn owners and prevent them from accessing our services thereby reducing the risk of non-complaint debtors. The User id is an essential token that is created upon onboarding into the application and is included every single transaction record .
+<br>
 
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
