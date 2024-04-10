@@ -144,7 +144,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm run start:prod
    ```
-4.NOTE -- PLEASE ENSURE TO CREATE MYSQL DATABASE CONNECTION FOR THIS APPLICATION AND ATTACH INTO YOUR CONFIGURATION FILE`
+4. NOTE -- ENSURE TO CREATE MYSQL DATABASE CONNECTION FOR THIS APPLICATION AND ATTACH INTO YOUR CONFIGURATION FILE`
  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -179,22 +179,6 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
@@ -211,7 +195,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Online - [@linkedIn](https://www.linkedin.com/in/victorojong) - victorojong500@gmail.com
 
-Project Link: [https://github.com/victor-ojong/Lendsqr-Backend-Engineer-Assessment](https://github.com/victor-ojong/Lendsqr-Backend-Engineer-Assessment)
+Project Link: [https://victor-ojong-lendsqr-be-test.onrender.com](https://victor-ojong-lendsqr-be-test.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,16 +204,15 @@ Project Link: [https://github.com/victor-ojong/Lendsqr-Backend-Engineer-Assessme
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Helpful resources
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Choose an Open Source License](https://postman.com)
 * [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
