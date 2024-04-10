@@ -16,7 +16,7 @@
   <p align="center">
     A comprehensive documentation for demo credit application 
     <br />
-    <a href="https://github.com/victor-ojong/Lendsqr-Backend-Engineer-Assessment"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/victor-ojong/Lendsqr-Backend-Engineer-Assessment"><strong>Explore the postman docs »</strong></a>
     <br />
     <br />
     <a href="https://victor-ojong-lendsqr-be-test.onrender.com/">View Demo</a>
@@ -86,6 +86,13 @@ The Entity Relationship (E-R Diagram) above shows that the different entities of
 ### Tech Stack 
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+
+* [![Nest.js](https://example.com/path/to/nestjs/icon.png)](https://nestjs.com/)
+* [![TypeScript](https://example.com/path/to/typescript/icon.png)](https://www.typescriptlang.org/)
+* [![Knex.js](https://example.com/path/to/knexjs/icon.png)](https://knexjs.org/)
+* [![MySQL](https://example.com/path/to/mysql/icon.png)](https://www.mysql.com/)
+
 
 * [![Next][Nest.js]][Nest-url]
 * [![React][React.js]][React-url]
