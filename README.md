@@ -11,7 +11,7 @@
     <img src="/assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">DEMO CREDIT APP</h3>
+  <h3 align="center">CREDIT APP</h3>
 
   <p align="center">
     A comprehensive documentation for demo credit application 
