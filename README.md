@@ -139,19 +139,25 @@ Below is a guide to for installing and running this project locally and in produ
    ```sh
    npm install
    ```
-3. RUN THE SERVER IN DEVELOPMENT ENVIRONMENT
+3. RUN server in development environment
    ```sh
    npm run start:dev
    ```
-3. RUN THE SERVER IN PRODUCTION ENVIRONMENT
+3. RUN server in production environment
    ```sh
    npm run start:prod
    ```
-4. NOTE -- ENSURE TO CREATE MYSQL DATABASE CONNECTION FOR THIS APPLICATION AND ATTACH INTO YOUR CONFIGURATION FILE`
+4. ENSURE TO CREATE MYSQL DATABASE CONNECTION FOR THIS APPLICATION AND ATTACH INTO YOUR CONFIGURATION FILE`
  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<div align="center">
+<a href="https://victor-ojong-lendsqr-be-test.onrender.com/">
+    <img src="/assets/codebase.png" alt="Logo" width="80%">
+  </a>
+</div>
 
 
 
