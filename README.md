@@ -66,8 +66,9 @@ Demo Credit is a mobile lending app that requires wallet functionality. This is 
 Features:
 * A user can create an account
 * A user can transfer funds to another user’s account
-* A user can withdraw funds from their account.
-* A user with records in the Lendsqr Adjutor Karma blacklist is never onboarded (can not create an account with us)
+* A user can withdraw funds from their account
+* An Admin user can aprove loans and credit other users
+* A user with records in the Lendsqr Adjutor Karma blacklist is never onboarded.
 
 
 <div align="center">
@@ -85,11 +86,11 @@ The Entity Relationship (E-R Diagram) above shows that the different entities of
 
 ### Tech Stack 
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+The following tools were used for the development of this project; 
 
 
 * [![Nest.js](https://example.com/path/to/nestjs/icon.png)](https://nestjs.com/)
-* [![TypeScript](https://example.com/path/to/typescript/icon.png)](https://www.typescriptlang.org/)
+* [![TypeScript](https://icons8.com/icon/HcQEdKCkXUs3/typescript)](https://www.typescriptlang.org/)
 * [![Knex.js](https://example.com/path/to/knexjs/icon.png)](https://knexjs.org/)
 * [![MySQL](https://example.com/path/to/mysql/icon.png)](https://www.mysql.com/)
 
