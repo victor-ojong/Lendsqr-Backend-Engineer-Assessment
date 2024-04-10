@@ -11,19 +11,18 @@
     <img src="/assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">DEMO CREDIT LOAD APP</h3>
+  <h3 align="center">DEMO CREDIT APP</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A comprehensive documentation of demo credit application 
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/victor-ojong/Lendsqr-Backend-Engineer-Assessment"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://victor-ojong-lendsqr-be-test.onrender.com/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/victor-ojong/Lendsqr-Backend-Engineer-Assessment/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -59,12 +58,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <div align="center">
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 <a href="https://victor-ojong-lendsqr-be-test.onrender.com/">
     <img src="/assets/DATA FLOW DIAGRAM.png" alt="Logo" width="80%">
   </a>
-
 </div>
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
