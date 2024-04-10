@@ -45,10 +45,8 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -195,10 +193,6 @@ Below is a guide to for installing and running this project locally and in produ
 Online - [@linkedIn](https://www.linkedin.com/in/victorojong) - victorojong500@gmail.com
 
 Project Link: [https://victor-ojong-lendsqr-be-test.onrender.com](https://victor-ojong-lendsqr-be-test.onrender.com/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
