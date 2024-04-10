@@ -154,26 +154,16 @@ Below is a guide to for installing and running this project locally and in produ
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
 
 - [x] Initialize bvn and recieve OTP token
 - [x] Send the OTP token with new account password for demo credit
-- [ ] if user not blacklisted in karma service
-    - [ ] Account is created
-    - [ ] User is onboared
-- [ ] if user blacklisted in karma service
+- [x] if user not blacklisted in karma service
+    - [x] Account is created
+    - [x] User is onboared
+- [-] if user blacklisted in karma service
     - [ ] Access denied!
 - [ ] User Logs in
     - [ ] Can transfer funds 
