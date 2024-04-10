@@ -101,7 +101,7 @@ These tools are preferred because they offer
    <br>
 * <b>NestJs</b>: A progressive Node.js framework for building efficient, reliable, and scalable server-side applications, offering modularity, dependency injection, and robustness.
    <br>
-* Deployment - Render: A cloud platform for deploying and scaling web applications easily, offering simplicity, scalability, and reliability in hosting infrastructure.
+* <b>Deployment - Render</b>: A cloud platform for deploying and scaling web applications easily, offering simplicity, scalability, and reliability in hosting infrastructure.
    <br>
 * <b>CI/CD workflow</b>: Continuous Integration (CI) and Continuous Deployment (CD) automate the software delivery process, ensuring rapid, reliable, and consistent deployment of applications.
    <br>
@@ -116,11 +116,11 @@ These tools are preferred because they offer
 <!-- GETTING STARTED -->
 ## Getting Started
 
-In other for you to get starte, the the following
+In other to get started, the foolowing steps will be useful.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+You will need a MySQL database. To install other dependepcies run the following command on the applications root directory.
 * npm
   ```sh
   npm install
@@ -168,15 +168,19 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Initialize bvn and recieve OTP token
+- [x] Send the OTP token with new account password for demo credit
+- [ ] if user not blacklisted in karma service
+    - [ ] Account is created
+    - [ ] User is onboared
+- [ ] if user blacklisted in karma service
+    - [ ] Access denied!
+- [ ] User Logs in
+    - [ ] Can transfer funds 
+    - [ ] Can request for loan
+    - [ ] Can recieve funds
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
