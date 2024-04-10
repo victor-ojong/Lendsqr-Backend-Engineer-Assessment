@@ -89,20 +89,16 @@ The Entity Relationship (E-R Diagram) above shows that the different entities of
 The following tools were used for the development of this project; 
 
 
-* [![Nest.js](https://example.com/path/to/nestjs/icon.png)](https://nestjs.com/)
-* [![TypeScript](https://icons8.com/icon/HcQEdKCkXUs3/typescript)](https://www.typescriptlang.org/)
-* [![Knex.js](https://example.com/path/to/knexjs/icon.png)](https://knexjs.org/)
-* [![MySQL](https://example.com/path/to/mysql/icon.png)](https://www.mysql.com/)
+* Node.Js (LTS version)
+* Typescript
+* MySQL database
+* KnexJS ORM
+* NestJs
+* Render - Deployment 
+* CI/CD workflow 
+* Jest - unit testing
+* Athentication - bcrypt and sessions
 
-
-* [![Next][Nest.js]][Nest-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 
 NodeJS (LTS version)
