@@ -90,14 +90,23 @@ These tools are preferred because they offer
 
 
 * <b>Node.js (LTS version)</b>: A robust, scalable runtime environment for building server-side applications using JavaScript.
+     <br>
 * <b>Typescript</b>: Provides static typing, enhancing code maintainability, readability, and catching errors during development.
+  <br>
 * <b>MySQL database</b>: A widely-used, open-source relational database management system, offering reliability, scalability, and performance for storing and managing data.
+   <br>
 * <b>KnexJS ORM</b>: An SQL query builder for Node.js, facilitating database interactions, migrations, and seeding with ease, promoting productivity and maintainability.
+  <br>
 * <b>Restful API Design</b>: A standard approach for designing APIs, ensuring interoperability, scalability, and simplicity in communication between systems.
+   <br>
 * <b>NestJs</b>: A progressive Node.js framework for building efficient, reliable, and scalable server-side applications, offering modularity, dependency injection, and robustness.
+   <br>
 * Deployment - Render: A cloud platform for deploying and scaling web applications easily, offering simplicity, scalability, and reliability in hosting infrastructure.
+   <br>
 * <b>CI/CD workflow</b>: Continuous Integration (CI) and Continuous Deployment (CD) automate the software delivery process, ensuring rapid, reliable, and consistent deployment of applications.
+   <br>
 * <b>Unit test - Jest</b>: A JavaScript testing framework with a focus on simplicity, ensuring code quality, reliability, and maintainability through automated testing.
+   <br>
 * <b>Authentication</b> - bcrypt: A widely-used library for hashing passwords securely, enhancing security and protecting user credentials from unauthorized access.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
