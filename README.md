@@ -89,16 +89,16 @@ The Entity Relationship (E-R Diagram) above shows that the different entities of
 These tools are preferred because they offer
 
 
-* Node.js (LTS version): A robust, scalable runtime environment for building server-side applications using JavaScript.
-* Typescript: Provides static typing, enhancing code maintainability, readability, and catching errors during development.
-* MySQL database: A widely-used, open-source relational database management system, offering reliability, scalability, and performance for storing and managing data.
-* KnexJS ORM: An SQL query builder for Node.js, facilitating database interactions, migrations, and seeding with ease, promoting productivity and maintainability.
-* Restful API Design: A standard approach for designing APIs, ensuring interoperability, scalability, and simplicity in communication between systems.
-* NestJs: A progressive Node.js framework for building efficient, reliable, and scalable server-side applications, offering modularity, dependency injection, and robustness.
+* <b>Node.js (LTS version)</b>: A robust, scalable runtime environment for building server-side applications using JavaScript.
+* <b>Typescript</b>: Provides static typing, enhancing code maintainability, readability, and catching errors during development.
+* <b>MySQL database</b>: A widely-used, open-source relational database management system, offering reliability, scalability, and performance for storing and managing data.
+* <b>KnexJS ORM</b>: An SQL query builder for Node.js, facilitating database interactions, migrations, and seeding with ease, promoting productivity and maintainability.
+* <b>Restful API Design</b>: A standard approach for designing APIs, ensuring interoperability, scalability, and simplicity in communication between systems.
+* <b>NestJs</b>: A progressive Node.js framework for building efficient, reliable, and scalable server-side applications, offering modularity, dependency injection, and robustness.
 * Deployment - Render: A cloud platform for deploying and scaling web applications easily, offering simplicity, scalability, and reliability in hosting infrastructure.
-* CI/CD workflow: Continuous Integration (CI) and Continuous Deployment (CD) automate the software delivery process, ensuring rapid, reliable, and consistent deployment of applications.
-* Unit test - Jest: A JavaScript testing framework with a focus on simplicity, ensuring code quality, reliability, and maintainability through automated testing.
-* Authentication - bcrypt: A widely-used library for hashing passwords securely, enhancing security and protecting user credentials from unauthorized access.
+* <b>CI/CD workflow</b>: Continuous Integration (CI) and Continuous Deployment (CD) automate the software delivery process, ensuring rapid, reliable, and consistent deployment of applications.
+* <b>Unit test - Jest</b>: A JavaScript testing framework with a focus on simplicity, ensuring code quality, reliability, and maintainability through automated testing.
+* <b>Authentication</b> - bcrypt: A widely-used library for hashing passwords securely, enhancing security and protecting user credentials from unauthorized access.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,15 +107,14 @@ These tools are preferred because they offer
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+In other for you to get starte, the the following
 
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
-  npm install npm@latest -g
+  npm install
   ```
 
 ### Installation
