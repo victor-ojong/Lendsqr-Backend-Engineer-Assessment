@@ -62,13 +62,13 @@
     <img src="/assets/DATA FLOW DIAGRAM.png" alt="Logo" width="80%">
   </a>
 </div>
+Demo Credit is a mobile lending app that requires wallet functionality. This is needed as borrowers need a wallet to receive the loans they have been granted and also send the money for repayments. THis MVP (Minimun Viablw Product)provides endpoints for the following API features;
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Features:
+* A user can create an account
+* A user can transfer funds to another user’s account
+* A user can withdraw funds from their account.
+* A user with records in the Lendsqr Adjutor Karma blacklist is never onboarded (can not create an account with us)
 
 
 <div align="center">
