@@ -200,19 +200,6 @@ Project Link: [https://victor-ojong-lendsqr-be-test.onrender.com](https://victor
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Helpful resources
-
-* [Choose an Open Source License](https://postman.com)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-*
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
