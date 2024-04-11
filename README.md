@@ -16,7 +16,7 @@
   <p align="center">
     A comprehensive documentation for demo credit application 
     <br />
-    <a href="https://github.com/victor-ojong/Lendsqr-Backend-Engineer-Assessment"><strong>Explore the postman docs »</strong></a>
+    <a href="https://documenter.getpostman.com/view/33326436/2sA3BhduLw"><strong>Explore the postman docs »</strong></a>
     <br />
     <br />
     <a href="https://victor-ojong-lendsqr-be-test.onrender.com/">View Demo</a>
