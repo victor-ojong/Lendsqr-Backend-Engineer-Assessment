@@ -59,7 +59,7 @@
     <img src="/assets/DATA FLOW DIAGRAM.png" alt="Logo" width="80%">
   </a>
 </div>
-Demo Credit is a mobile lending app that requires wallet functionality. This is needed as borrowers need a wallet to receive the loans they have been granted and also send the money for repayments. THis MVP (Minimun Viablw Product)provides endpoints for the following API features;
+Demo Credit is a mobile lending app that requires wallet functionality. This is needed as borrowers need a wallet to receive the loans they have been granted and also send the money for repayments. This MVP (Minimum Viable Product)provides endpoints for the following API features;
 
 Features:
 * A user can create an account
